@@ -1,0 +1,46 @@
+name: WinAPI
+version: 1.0.0
+author: BoxOfDevs Team
+api:
+- 1.14.0
+- 2.0.0
+main: BoxOfDevs\WinAPI\main
+commands:
+    winapi:
+        usage: "/winapi info|plugins"
+        description: "View WinAPI info and compatible plugins."
+        permission: winapi.cmd
+    setwins:
+        usage: "/setwins <player> <count>"
+        description: "Set the wincount of a player."
+        permission: winapi.setwins
+    addwins:
+        usage: "/addwins <player> <count>"
+        description: "Add wins to the current wins of a player."
+        permission: winapi.addwins
+    mywins:
+        usage: "/mywins"
+        description: "See how many wins you have got."
+        permission: winapi.mywins
+        aliases: [wins]
+    getwins:
+        usage: "/getwins <player>"
+        description: "See how many wins another player has got."
+        permission: winapi.getwins
+        aliases: [seewins]
+permissions:
+    winapi.cmd:
+        default: op
+        description: "Permission for /winapi"
+    winapi.setwins:
+        default: op
+        description: "Permission for /setwins"
+    winapi.addwins:
+        default: op
+        description: "Permission for /addwins"
+    winapi.mywins:
+        default: true
+        description: "Permission for /mywins"
+    winapi.getwins:
+        default: true
+        description: "Permission for /getwins"

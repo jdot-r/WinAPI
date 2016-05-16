@@ -10,6 +10,10 @@ commands:
         usage: "/winapi info|plugins"
         description: "View WinAPI info and compatible plugins."
         permission: winapi.cmd
+    addwin:
+        usage: "/addwin <player>"
+        description: "Adds one win to a player."
+        permission: winapi.addwin
     setwins:
         usage: "/setwins <player> <count>"
         description: "Set the wincount of a player."
@@ -32,6 +36,9 @@ permissions:
     winapi.cmd:
         default: op
         description: "Permission for /winapi"
+    winapi.addwin:
+        default: op
+        description: "Permission for /addwin"
     winapi.setwins:
         default: op
         description: "Permission for /setwins"

@@ -1,5 +1,19 @@
 <?php
+
+/*
+*     _    _ _        ___  ______ _____
+*    | |  | (_)      / _ \ | ___ \_   _|
+*    | |  | |_ _ __ / /_\ \| |_/ / | |
+*    | |/\| | | '_ \|  _  ||  __/  | |
+*    \  /\  / | | | | | | || |    _| |_
+*     \/  \/|_|_| |_\_| |_/\_|    \___/
+*
+* An easy to use API which counts and saves wins for each player.
+* by BoxOfDevs
+*/
+
 namespace BoxOfDevs\WinAPI;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\Command;

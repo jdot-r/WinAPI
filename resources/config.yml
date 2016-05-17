@@ -1,0 +1,18 @@
+---
+#   _    _ _        ___  ______ _____
+#  | |  | (_)      / _ \ | ___ \_   _|
+#  | |  | |_ _ __ / /_\ \| |_/ / | |
+#  | |/\| | | '_ \|  _  ||  __/  | |
+#  \  /\  / | | | | | | || |    _| |_
+#   \/  \/|_|_| |_\_| |_/\_|    \___/
+#
+# Configuration file for WinAPI by BoxOfDevs
+#
+# Messages:
+mywins: "You have {wins} wins"
+getwins: "{player} has {wins} wins."
+addwin: "You successfully added a win to {player}s win count."
+addwins: "You successfully added wins to {player}s win count."
+setwins: "You successfully set the wins of {player}."
+notfound: "Player {name} not found."
+...

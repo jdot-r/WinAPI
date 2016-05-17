@@ -133,11 +133,11 @@ class Main extends PluginBase implements Listener{
                               $wins = $this->getWins($player);
                               $message = $this->getMsg("getwins", "{wins}", $wins);
                               $plrname = $player->getName();
-                              $message = str_replace("{player}", $plrname)
+                              $message = str_replace("{player}", $plrname);
                               $sender->sendMessage($message);
                               break;
                          }else{
-                              $message = $this->getMsg("notfound", "{name}", $args[0])
+                              $message = $this->getMsg("notfound", "{name}", $args[0]);
                               $sender->sendMessage($message);
                               break;
                          }
@@ -155,7 +155,7 @@ class Main extends PluginBase implements Listener{
                               $sender->sendMessage($message);
                               break;
                          }else{
-                              $message = $this->getMsg("notfound", "{name}", $args[0])
+                              $message = $this->getMsg("notfound", "{name}", $args[0]);
                               $sender->sendMessage($message);
                               break;
                          }
@@ -177,7 +177,7 @@ class Main extends PluginBase implements Listener{
                                    $sender->sendMessage($message);
                                    break;
                               }else{
-                                   $message = $this->getMsg("notfound", "{name}", $args[0])
+                                   $message = $this->getMsg("notfound", "{name}", $args[0]);
                                    $sender->sendMessage($message);
                                    break;
                               }
@@ -200,7 +200,7 @@ class Main extends PluginBase implements Listener{
                                    $sender->sendMessage($message);
                                    break;
                               }else{
-                                   $message = $this->getMsg("notfound", "{name}", $args[0])
+                                   $message = $this->getMsg("notfound", "{name}", $args[0]);
                                    $sender->sendMessage($message);
                                    break;
                               }

@@ -123,7 +123,8 @@ class Main extends PluginBase implements Listener{
                               $sender->sendMessage($message);
                               break;
                          }else{
-                              $sender->sendMessage("Player not found!");
+                              $message = $this->getMsg("notfound", "{name}", $args[0])
+                              $sender->sendMessage($message);
                               break;
                          }
                     }
@@ -140,7 +141,8 @@ class Main extends PluginBase implements Listener{
                               $sender->sendMessage($message);
                               break;
                          }else{
-                              $sender->sendMessage("Player not found!");
+                              $message = $this->getMsg("notfound", "{name}", $args[0])
+                              $sender->sendMessage($message);
                               break;
                          }
                     }
@@ -161,7 +163,8 @@ class Main extends PluginBase implements Listener{
                                    $sender->sendMessage($message);
                                    break;
                               }else{
-                                   $sender->sendMessage("Player not found!");
+                                   $message = $this->getMsg("notfound", "{name}", $args[0])
+                                   $sender->sendMessage($message);
                                    break;
                               }
                          }
@@ -183,7 +186,8 @@ class Main extends PluginBase implements Listener{
                                    $sender->sendMessage($message);
                                    break;
                               }else{
-                                   $sender->sendMessage("Player not found!");
+                                   $message = $this->getMsg("notfound", "{name}", $args[0])
+                                   $sender->sendMessage($message);
                                    break;
                               }
                          }

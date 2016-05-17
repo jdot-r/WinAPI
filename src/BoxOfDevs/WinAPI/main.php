@@ -65,6 +65,10 @@ class Main extends PluginBase implements Listener{
                return true;
           }
      }
+     public function saveData(){
+          $this->data->setAll($this->getwindata);
+          $this->data->save();
+     }
      public function onJoin(PlayerJoinEvent $event){
           $player = $event->getPlayer();
           $plrname = strtolower($player->getName());
@@ -74,6 +78,9 @@ class Main extends PluginBase implements Listener{
           }else{
                return false;
           }
+     }
+     public function onQuit(PlayerQuitEvent $qevent){
+          $this->saveData();
      }
      public function onCommand(CommandSender $sender, Command $command, $label, array $args){
           switch($command->getName()){
@@ -183,5 +190,9 @@ class Main extends PluginBase implements Listener{
                     }
           return true;
           }
+     }
+     public function onDisable(){
+          $this->saveData();
+          $this->getLogger->info("Data saved and disabled!");
      }
 }

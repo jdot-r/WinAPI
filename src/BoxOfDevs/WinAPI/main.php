@@ -108,7 +108,7 @@ class Main extends PluginBase implements Listener{
                                    $sender->sendMessage("You are using WinAPI by BoxOfDevs V 1.0.0!");
                               case "plugins":
                                    $useplugins = $this->plugins->get("useplugins");
-                                   $viewplugins = $this->plugins->get("viewplugins")
+                                   $viewplugins = $this->plugins->get("viewplugins");
                                    $sender->sendMessage("Compatible plugins:\nPlugins wich use the WinAPI to save wins:" . $useplugins . "\nPlugins wich can show wins (stats):" . $viewplugins . "\nFor more info go on boxofdevs.ml");
                          }
                          break;

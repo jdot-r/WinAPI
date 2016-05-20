@@ -53,10 +53,10 @@ class Main extends PluginBase implements Listener{
      }
      public function addWins($player, $wins){
           if($player instanceof Player){
-               $player = $player->getName();
+               $plrname = $player->getName();
           }
-          $player = strtolower($player);
-          if(!isset($this->getwindata["wins"][$player])){
+          $plrname = strtolower($plrname);
+          if(!isset($this->getwindata["wins"][$plrname])){
                return false;
           }else{
                $currentwins = $this->getWins($player);
@@ -70,10 +70,10 @@ class Main extends PluginBase implements Listener{
      }
      public function setWins($player, $wins){
           if($player instanceof Player){
-               $player = $player->getName();
+               $plrname = $player->getName();
           }
-          $player = strtolower($player);
-          if(!isset($this->getwindata["wins"][$player])){
+          $plrname = strtolower($player);
+          if(!isset($this->getwindata["wins"][$plrname])){
                return false;
           }else{
                $currentwins = $this->getWins($player);

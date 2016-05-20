@@ -137,7 +137,7 @@ class Main extends PluginBase implements Listener{
                               $wins = $this->getWins($player);
                               $message = $this->getMsg("getwins", "{wins}", $wins);
                               $plrname = $player->getName();
-                              $message = str_replace("{player}", $plrname);
+                              $message = str_replace("{player}", $plrname, $message);
                               $sender->sendMessage($message);
                               break;
                          }else{

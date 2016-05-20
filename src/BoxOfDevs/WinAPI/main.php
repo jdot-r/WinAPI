@@ -108,10 +108,12 @@ class Main extends PluginBase implements Listener{
                          switch($args[0]){
                               case "info":
                                    $sender->sendMessage("You are using WinAPI by BoxOfDevs V 1.0.0!");
+                                   break;
                               case "plugins":
                                    $useplugins = $this->plugins->get("useplugins");
                                    $viewplugins = $this->plugins->get("viewplugins");
                                    $sender->sendMessage("Compatible plugins:\nPlugins wich use the WinAPI to save wins:" . $useplugins . "\nPlugins wich can show wins (stats):" . $viewplugins . "\nFor more info go on boxofdevs.ml");
+                                   break;
                          }
                          break;
                     }
@@ -213,6 +215,6 @@ class Main extends PluginBase implements Listener{
      }
      public function onDisable(){
           $this->saveData();
-          $this->getLogger->info("Data saved and disabled!");
+          $this->getLogger()->info("Data saved and disabled!");
      }
 }
